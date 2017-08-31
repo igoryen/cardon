@@ -5,6 +5,9 @@ $( document ).ready( function() {
 
 
 
+	var imagepath = "https://go.reachmail.net/client_files/TNGOC/images/"; // reachmail
+	// var imagepath = "images/"; // local
+
 
 
 
@@ -13,7 +16,9 @@ $( document ).ready( function() {
 	var bg_light_blue = "background-color: #d5dce4; ";
 	var bg_regect = 'background-color: #ff0000; ';
 	var bg_vital = 'background-color: #ff0000; ';
-	var bkg_nas_logo = "background-image: url(images/NAS-MobileApp-Header.jpg); background-repeat: no-repeat; background-size: cover; background-position: center top;  height: 208px; ";
+	var bkg_nas_logo = "background-image: url(" + imagepath + "NAS-MobileApp-Header.jpg); background-repeat: no-repeat; background-size: cover; background-position: center top;  height: 208px; ";
+	var bkg_nas_logo2 = imagepath + "NAS-MobileApp-Header.jpg";
+
 	var bold = 'font-weight:bold; '
 	var button_dimens = "padding: 12px 80px; ";
 	var capitalize = 'text-transform:capitalize; ';
@@ -32,13 +37,18 @@ $( document ).ready( function() {
 	var align_left = "text-align: left; ";
 	var wide_half = 'width: 50%; ';
 	var wide_40em = "width: 640px; ";
+	var wide_13em = "width: 208px; ";
 	var word_wrap = "word-break:break-all; ";
+	var hero_height = "height: 174px; ";
+	var hero_width = "max-width: 1080px; ";
 
 	var uppercase = 'text-transform: uppercase; ';
 	var uppercase = 'text-transform:uppercase; ';
 	var vital = 'color:#ff0000; ';
 
 	var pad_head = "padding: 5px 16px; ";
+	var border_red = "border:1px solid red; "
+
 
 
 
@@ -50,15 +60,34 @@ $( document ).ready( function() {
 	});
 
 
-	$('#a').find('td').first().attr('style', bkg_nas_logo + pad1);
-	// $('#hero_pt1').attr("style", );
-	$('#a1a').find('img').attr('style', wide_40em);
-	$('#a2a').find('td').attr('style', centered);
-	$('#a3a').find('td').attr('style', centered + pad3);
 
+	$("#main_table").attr("style", hero_width);
+	// $("#hero_pt1").attr('style', bkg_nas_logo + pad1);
+	// $('#hero_pt1').attr("style", );
+	// $("#hero_pt1b").attr("src", imagepath + "NAS-MobileApp-Header.jpg" );
+	// $("#hero_pt1b").attr("src", imagepath + "NAS-MobileApp-Header.jpg" );
+
+	// $("#a").attr("width", hero_width);
+	// $('#a1a').find('td').attr('style', border_red);
+	$('#a1a').find('img').attr('style', hero_height + hero_width).attr("height", hero_height).attr("width", hero_width);
+	// $("#a1a").find("img").attr("src", imagepath + "NAS-MobileApp.png");
+	$("#a1a").find("img").attr("src", imagepath + "NAS-email-hero.png");
+
+
+
+
+
+	$('#a2a').find('td').attr('style', centered);
+
+	$('#a3a').find('td').attr('style', centered + pad3);
+	$("#a3a").find("img").first().attr("src", imagepath + "Apple_icon_Website.png");
+	$("#a3a").find("img").last().attr("src", imagepath + "Android_icon_Website.png");
+
+	// $("#b").attr("width", hero_width);
 	$('#b').attr( 'style', vital + ital + bold);
 	$('#b').find('td').find('span').attr( 'style', uppercase)
 
+	// $("#c").attr("width", hero_width);
 	$("#c").find('td').attr('style', centered + font1_5em + fg_blue + pad_top + word_wrap);
 	$('#c').find('td').find('span').attr('style', bold + capitalize + centered );
 
