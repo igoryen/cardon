@@ -8,35 +8,37 @@ $( document ).ready( function() {
 
 
 
-	var bg_accept = 'background-color: #00b050;';
-	var bg_blue = 'background-color:#44546a;';
-	var bg_light_blue = "background-color: #d5dce4;";
-	var bg_regect = 'background-color: #ff0000;';
-	var bg_vital = 'background-color: #ff0000;';
-	var bkg_nas_logo = "background-image: url(images/NAS-MobileApp-Header.jpg);background-repeat: no-repeat; background-size: cover; background-position: center top;  height: 208px;";
-	var bold = 'font-weight:bold;'
-	var button_dimens = "padding: 12px 80px;";
-	var capitalize = 'text-transform:capitalize;';
-	var centered = 'text-align:center;';
-	var fg_blue = 'color:#44546a;';
-	var fg_white = 'color:#fff;';
-	var font1_5em = 'font-size: 24px;';
-	var ital = 'font-style:italic;';
-	var margin1 = 'margin: 16px;';
-	var pad1 = 'padding: 16px;';
-	var pad3 = 'padding: 5px;';
-	var pad9 = 'padding: 14px;';
-	var pad_bot = 'padding-bottom: 13px;';
-	var pad_top = 'padding-top: 13px;';
-	var align_right = "text-align: right;";
-	var align_left = "text-align: left;";
-	var wide_half = 'width: 50%;';
+	var bg_accept = 'background-color: #00b050; ';
+	var bg_blue = 'background-color:#44546a; ';
+	var bg_light_blue = "background-color: #d5dce4; ";
+	var bg_regect = 'background-color: #ff0000; ';
+	var bg_vital = 'background-color: #ff0000; ';
+	var bkg_nas_logo = "background-image: url(images/NAS-MobileApp-Header.jpg); background-repeat: no-repeat; background-size: cover; background-position: center top;  height: 208px; ";
+	var bold = 'font-weight:bold; '
+	var button_dimens = "padding: 12px 80px; ";
+	var capitalize = 'text-transform:capitalize; ';
+	var centered = 'text-align:center; ';
+	var fg_blue = 'color:#44546a; ';
+	var fg_white = 'color:#fff; ';
+	var font1_5em = 'font-size: 24px; ';
+	var ital = 'font-style:italic; ';
+	var margin1 = 'margin: 16px; ';
+	var pad1 = 'padding: 16px; ';
+	var pad3 = 'padding: 5px; ';
+	var pad9 = 'padding: 14px; ';
+	var pad_bot = 'padding-bottom: 13px; ';
+	var pad_top = 'padding-top: 13px; ';
+	var align_right = "text-align: right; ";
+	var align_left = "text-align: left; ";
+	var wide_half = 'width: 50%; ';
+	var wide_40em = "width: 640px; ";
+	var word_wrap = "word-break:break-all; ";
 
-	var uppercase = 'text-transform: uppercase;';
-	var uppercase = 'text-transform:uppercase;';
-	var vital = 'color:#ff0000;';
+	var uppercase = 'text-transform: uppercase; ';
+	var uppercase = 'text-transform:uppercase; ';
+	var vital = 'color:#ff0000; ';
 
-	var pad_head = "padding: 5px 16px;";
+	var pad_head = "padding: 5px 16px; ";
 
 
 
@@ -50,28 +52,28 @@ $( document ).ready( function() {
 
 	$('#a').find('td').first().attr('style', bkg_nas_logo + pad1);
 	// $('#hero_pt1').attr("style", );
-	$('#a1a').find('img').attr('style', 'width: 40em;');
+	$('#a1a').find('img').attr('style', wide_40em);
 	$('#a2a').find('td').attr('style', centered);
 	$('#a3a').find('td').attr('style', centered + pad3);
 
 	$('#b').attr( 'style', vital + ital + bold);
 	$('#b').find('td').find('span').attr( 'style', uppercase)
 
-	$("#c").find('td').attr('style', centered + font1_5em + fg_blue + pad_top);
+	$("#c").find('td').attr('style', centered + font1_5em + fg_blue + pad_top + word_wrap);
 	$('#c').find('td').find('span').attr('style', bold + capitalize + centered );
 
-	$("#d").find('td').attr('style', centered + ital+ pad_bot );
+	$("#d").find('td').attr('style', centered + ital+ pad_bot + word_wrap );
 
 
-	$("#e").find('td').attr('style', centered + pad_bot );
+	$("#e").find('td').attr('style', centered + pad_bot + word_wrap );
 	$('#e').find('td').find('span').attr('style', bold + capitalize + centered);
 
 	
 
-	$("#f").find('td').attr('style', centered + pad_bot );
+	$("#f").find('td').attr('style', centered + pad_bot + word_wrap );
 	$('#f').find('td').find('span').attr('style', bold + capitalize + centered);
 
-	$('#g').children().first().attr('style',  bg_blue + fg_white + uppercase + bold + pad_head);
+	$('#g').children().first().attr('style',  bg_blue + fg_white + uppercase + bold + pad_head + word_wrap);
 
 	// $('#h1').find('td').attr('style', capitalize);
 	// $('#h1').find('td').find('span').attr('style', bold + capitalize);
@@ -80,17 +82,17 @@ $( document ).ready( function() {
 	$('#h1b').find('td').attr('style', pad3 + capitalize);
 	$('#h1c').find('td').attr('style', pad3 + capitalize);
 
-	$('#h1a').find('td').find('span').attr('style', bold + pad3 + capitalize);
-	$('#h1b').find('td').find('span').attr('style', bold + pad3 + capitalize);
-	$('#h1c').find('td').find('span').attr('style', bold + pad3 + capitalize);
+	$('#h1a').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap);
+	$('#h1b').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap);
+	$('#h1c').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap);
 
 	$('#h2a').find('td').attr('style', pad3 + capitalize);
 	$('#h2b').find('td').attr('style', pad3 + capitalize);
 	$('#h2c').find('td').attr('style', pad3 + capitalize);
 
-	$('#h2a').find('td').find('span').attr('style', bold + pad3 + capitalize);
-	$('#h2b').find('td').find('span').attr('style', bold + pad3 + capitalize);
-	$('#h2c').find('td').find('span').attr('style', bold + pad3 + capitalize);
+	$('#h2a').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap);
+	$('#h2b').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap);
+	$('#h2c').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap);
 
 
 
@@ -100,30 +102,30 @@ $( document ).ready( function() {
 	$('#j1b').find('td').attr('style', pad3 + capitalize);
 	$('#j1c').find('td').attr('style', pad3 + capitalize);
 
-	$('#j1a').find('td').find('span').attr('style', bold + pad3 + capitalize);
-	$('#j1b').find('td').find('span').attr('style', bold + pad3 + capitalize);
-	$('#j1c').find('td').find('span').attr('style', bold + pad3 + capitalize);
+	$('#j1a').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap + word_wrap);
+	$('#j1b').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap + word_wrap);
+	$('#j1c').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap + word_wrap);
 
 	$('#j2a').find('td').attr('style', pad3 + capitalize);
 	$('#j2b').find('td').attr('style', pad3 + capitalize);
 	$('#j2c').find('td').attr('style', pad3 + capitalize);
 
-	$('#j2a').find('td').find('span').attr('style', bold + pad3 + capitalize);
-	$('#j2b').find('td').find('span').attr('style', bold + pad3 + capitalize);
-	$('#j2c').find('td').find('span').attr('style', bold + pad3 + capitalize);
+	$('#j2a').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap);
+	$('#j2b').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap);
+	$('#j2c').find('td').find('span').attr('style', bold + pad3 + capitalize + word_wrap);
 
-	$('#k').children().first().attr('style',  bg_blue + fg_white + uppercase + bold + pad_head);
+	$('#k').children().first().attr('style',  bg_blue + fg_white + uppercase + bold + pad_head + word_wrap);
 
-	$('#l').find('td').attr('style', pad9);
+	$('#l').find('td').attr('style', pad9 + word_wrap);
 
 	
 	$('#m').attr('style', bg_light_blue);
-	$('#m').find('td').attr('style', pad9);
+	$('#m').find('td').attr('style', pad9 + word_wrap);
 
-	$('#n').find('td').attr('style', pad9);
+	$('#n').find('td').attr('style', pad9 + word_wrap);
 
 	$('#o').attr('style', bg_light_blue);
-	$('#o').find('td').attr('style', pad9);
+	$('#o').find('td').attr('style', pad9 + word_wrap);
 
 
 	$('#p').attr('style', centered + bold);
