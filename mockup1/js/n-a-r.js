@@ -13,21 +13,21 @@ $( document ).ready( function() {
 	var bg_light_blue = "background-color: #d5dce4;";
 	var bg_regect = 'background-color: #ff0000;';
 	var bg_vital = 'background-color: #ff0000;';
-	var bkg_nas_logo = "background-image: url(images/NAS-MobileApp-Header.jpg);background-repeat: no-repeat; background-size: cover; background-position: center top;  height: 13em;";
+	var bkg_nas_logo = "background-image: url(images/NAS-MobileApp-Header.jpg);background-repeat: no-repeat; background-size: cover; background-position: center top;  height: 208px;";
 	var bold = 'font-weight:bold;'
-	var button_dimens = "padding: .7em 5em;";
+	var button_dimens = "padding: 12px 80px;";
 	var capitalize = 'text-transform:capitalize;';
 	var centered = 'text-align:center;';
 	var fg_blue = 'color:#44546a;';
 	var fg_white = 'color:#fff;';
-	var font1_5em = 'font-size: 1.5em;';
+	var font1_5em = 'font-size: 24px;';
 	var ital = 'font-style:italic;';
-	var margin1 = 'margin: 1em;';
-	var pad1 = 'padding: 1em;';
-	var pad3 = 'padding: .3em;';
-	var pad9 = 'padding: .9em;';
-	var pad_bot = 'padding-bottom: .8em;';
-	var pad_top = 'padding-top: .8em;';
+	var margin1 = 'margin: 16px;';
+	var pad1 = 'padding: 16px;';
+	var pad3 = 'padding: 5px;';
+	var pad9 = 'padding: 14px;';
+	var pad_bot = 'padding-bottom: 13px;';
+	var pad_top = 'padding-top: 13px;';
 	var align_right = "text-align: right;";
 	var align_left = "text-align: left;";
 	var wide_half = 'width: 50%;';
@@ -36,7 +36,7 @@ $( document ).ready( function() {
 	var uppercase = 'text-transform:uppercase;';
 	var vital = 'color:#ff0000;';
 
-	var pad_head = "padding: .3em 1em;";
+	var pad_head = "padding: 5px 16px;";
 
 
 
