@@ -30,7 +30,10 @@ $( document ).ready( function() {
 	var fg_white = 'color:#fff; ';
 	var font1_5em = 'font-size: 24px; ';
 	var hero_height = "height: 174px; ";
-	var hero_width = "max-width: 1080px; ";
+	var hero_width = "width: 1080px; ";
+	var row_heading_width = "width: " + (1080/4) * 1 + "px";
+	var row_field_width = "width: " + (1080/4) * 3 + "px";
+
 	var ital = 'font-style:italic; ';
 	var margin1 = 'margin: 16px; ';
 	var pad1 = 'padding: 16px; ';
@@ -89,23 +92,23 @@ $( document ).ready( function() {
 	// B
 	//==================================
 	// $("#b").attr("width", hero_width);
-	$('#b').attr( 'style', vital + ital + bold);
-	$('#b').find('td').find('span').attr( 'style', uppercase)
+	$('#b').attr( 'style', vital + ital + bold );
+	$('#b').find('td').attr("style", pad_bot_2);
+	$('#b').find('td').find('span').attr( 'style', uppercase )
 
-
-	//=======================
-	// C
-	//=======================
-	// $("#c").attr("width", hero_width);
-	$("#c").find('td').attr('style', pad_top_1 + pad_bot_2 + word_wrap);
-	$('#c').find('td').find('span').attr('style', bold );
 
 	
 	//========================
 	// J
 	//========================
 
-	$('#j1a').find('td').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap);
+	// $('#j').attr("style", );
+	$('#j1').attr( "width", hero_width);
+	$('#j1a td:first-child').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap + row_heading_width);
+	$('#j1a td:last-child').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap + row_field_width);
+
+
+
 	$('#j1b').find('td').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap);
 	$('#j1c').find('td').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap);
 	$('#j1d').find('td').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap);
@@ -124,7 +127,7 @@ $( document ).ready( function() {
 	$('#q').children().last().find('button').attr( 'style', bg_regect + fg_white + button_dimens + uppercase + bold + margin1);
 
 
-	$("#divider").attr("style", pad_top_2 + align_center);
+	$("#divider").attr("style", pad_top_2 + align_center + pad_bot_2);
 
 
 
@@ -133,6 +136,7 @@ $( document ).ready( function() {
 	//==================================
 	// $("#b").attr("width", hero_width);
 	$('#f_b').attr( 'style', vital + ital + bold);
+	$('#f_b').find('td').attr("style", pad_bot_2);
 	$('#f_b').find('td').find('span').attr( 'style', uppercase)
 
 	//=======================
@@ -147,8 +151,9 @@ $( document ).ready( function() {
 	// F_J
 	//========================
 
-	$('#f_j1a').find('td').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap);
-	$('#f_j1b').find('td').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap);
+	$('#f_fj1').attr( "width", hero_width);
+	$('#f_j1a td:first-child').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap + row_heading_width);
+	$('#f_j1a td:last-child').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap + row_field_width);
 	$('#f_j1c').find('td').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap);
 	$('#f_j1d').find('td').attr('style', pad3 + capitalize + pad_bot_1 + word_wrap);
 
