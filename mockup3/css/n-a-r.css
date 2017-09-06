@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Asap");
+body {
+  font-family: 'Asap', sans-serif;
+  font-size: 16px;
+  margin: 0; }
+
+#dont_reply {
+  margin: 1em;
+  color: #EC7063;
+  font-style: italic; }
+  #dont_reply span:last-child {
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=n-a-r.css.map */
