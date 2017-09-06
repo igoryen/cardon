@@ -61,7 +61,7 @@ $( document ).ready( function() {
 
 
 
-	$("#main_table").attr("style", hero_width);
+	$("#main_table").attr("style", hero_width).attr("width", 600).attr("border", 0).attr("valign", "top").attr("align", "center").attr("cellpadding", 0).attr("cellspacing", 0);
 	// $("#hero_pt1").attr('style', bkg_nas_logo + pad1);
 	// $('#hero_pt1').attr("style", );
 	// $("#hero_pt1b").attr("src", imagepath + "NAS-MobileApp-Header.jpg" );
