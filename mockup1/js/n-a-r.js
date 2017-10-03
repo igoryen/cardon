@@ -1,6 +1,6 @@
 $( document ).ready( function() {
 	$('body').attr('style', "font-family:Arial,sans-serif;");
-	$('table').attr( 'style', 'width:100%;');
+	// $('table').attr( 'style', 'width:100%;');
 	// $('td').attr('style', 'border: 1px solid #d9d9d9;');
 
 
@@ -31,16 +31,21 @@ $( document ).ready( function() {
 	var pad1 = 'padding: 16px; ';
 	var pad3 = 'padding: 5px; ';
 	var pad9 = 'padding: 14px; ';
-	var pad_bot = 'padding-bottom: 13px; ';
-	var pad_top = 'padding-top: 13px; ';
+	var pad_bot = 'padding-bottom: 5px; ';
+	var pad_top = 'padding-top: 5px; ';
 	var align_right = "text-align: right; ";
 	var align_left = "text-align: left; ";
 	var wide_half = 'width: 50%; ';
 	var wide_40em = "width: 640px; ";
 	var wide_13em = "width: 208px; ";
 	var word_wrap = "word-break:break-all; ";
-	var hero_height = "height: 174px; ";
-	var hero_width = "max-width: 1080px; ";
+
+	// var hero_height = "height: 174px; ";
+	// var hero_width = "max-width: 1080px; ";
+	
+	var hero_width = "width: 320; ";
+	var hero_height = "height: auto; ";
+
 
 	var uppercase = 'text-transform: uppercase; ';
 	var uppercase = 'text-transform:uppercase; ';
@@ -61,17 +66,40 @@ $( document ).ready( function() {
 
 
 
-	$("#main_table").attr("style", hero_width).attr("width", 600).attr("border", 0).attr("valign", "top").attr("align", "center").attr("cellpadding", 0).attr("cellspacing", 0);
+	$("#main_table")
+		.attr("width", 600)
+		.attr("border", 0)
+		.attr("valign", "top")
+		.attr("align", "center")
+		.attr("cellpadding", 0)
+		.attr("cellspacing", 0);
 	// $("#hero_pt1").attr('style', bkg_nas_logo + pad1);
 	// $('#hero_pt1').attr("style", );
+
+	$("#a1")
+		.attr("width", "620")
+		.attr("align", "center")
+		.attr("valign", "top");
+
 	// $("#hero_pt1b").attr("src", imagepath + "NAS-MobileApp-Header.jpg" );
 	// $("#hero_pt1b").attr("src", imagepath + "NAS-MobileApp-Header.jpg" );
 
 	// $("#a").attr("width", hero_width);
 	// $('#a1a').find('td').attr('style', border_red);
-	$('#a1a').find('img').attr('style', hero_height + hero_width).attr("height", hero_height).attr("width", hero_width);
+	// $('#a1a').find('img').attr('style', hero_width);
+	// $('#a1a').find('img').attr('style', hero_width);
+
+	$("#a1a").find("td")
+		.attr("width", "620")
+		.attr("align", "center")
+		.attr("valign", "top")
+		.attr("style", "text-align:center;");
+
 	// $("#a1a").find("img").attr("src", imagepath + "NAS-MobileApp.png");
-	$("#a1a").find("img").attr("src", imagepath + "NAS-email-hero.png");
+	$("#a1a").find("img")
+		.attr("src", imagepath + "NAS-email-hero.png")
+		.attr("width", "620")
+		.attr("alt", "NAS email hero image");
 
 
 
@@ -159,9 +187,36 @@ $( document ).ready( function() {
 
 	$('#p').attr('style', centered + bold);
 
-	$('#q').children().first().attr( 'style', vital + align_right);
-	$('#q').children().first().find('button').attr( 'style', bg_accept + fg_white + button_dimens + uppercase + bold + margin1);
-	$('#q').children().last().find('button').attr( 'style', bg_regect + fg_white + button_dimens + uppercase + bold + margin1);
+
+	// Buttons
+
+
+
+	$("#q0").attr("cellpadding", 10 )
+		.attr("width", 600)
+		.attr("border", 0)
+		.attr("valign", "top")
+		.attr("cellspacing", 10)
+		.attr("align", "center");
+
+
+	$('#q').children().first()
+		.attr( 'style', "text-align: right;")
+		;
+
+	$('#q').children().last()
+		.attr( 'style', "text-align: left;")
+		;
+
+	$('#q').children().first().find('a')
+		.attr( 'style', bg_accept + fg_white  + uppercase + bold +  "padding:10px 30px;")
+		
+		;
+	
+	$('#q').children().last().find('a')
+		.attr( 'style', bg_regect + fg_white  + uppercase + bold +  "padding:10px 30px;")
+
+		;
 
 
 
